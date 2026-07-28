@@ -45,8 +45,7 @@ export default function Navbar() {
           <span>Azora Engine</span>
         </Link>
         <div className="site-nav__meta">
-          <span>Game engine</span>
-          <span className="version-tag">v0.0.4</span>
+          <span className="version-tag">v0.0.1</span>
         </div>
         <div className="site-nav__links">
           {productLinks.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
@@ -57,7 +56,7 @@ export default function Navbar() {
               aria-haspopup="menu"
               onClick={() => setEcosystemOpen((open) => !open)}
             >
-              Azora Labs
+              Ecosystem
             </button>
             {ecosystemOpen && (
               <div className="site-nav__dropdown" role="menu">
@@ -83,7 +82,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="site-nav__mobile">
           {productLinks.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
-          <span className="site-nav__mobile-label">Azora Labs</span>
+          <span className="site-nav__mobile-label">Azora Ecosystem</span>
           {ecosystemLinks.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
           <a className="site-nav__mobile-donate" href="https://azoralabs.org/donate">Donate</a>
         </div>
