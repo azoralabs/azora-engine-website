@@ -46,7 +46,7 @@ export default function Navbar() {
           <span>Azora Engine</span>
         </Link>
         <div className="site-nav__meta">
-          <span className="version-tag">0.1.0-dev</span>
+          <span className="version-tag">0.1-dev</span>
         </div>
         <div className="site-nav__links">
           {productLinks.map(({ icon: Icon, ...link }) => (
